@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+main {
+    background: black url(../images/background.jfif) no-repeat center top;
+    height: 100vh;
+    width:100vw;
+    max-height: 840px;
+    max-width:390px;
+    overflow: hidden;
+}
+header,section,footer {
+    background-color: #000000cc;
+}
+input {
+    display:none;
+}
+
+/* header starts here */
+header {
+    margin:0px;
+    color:white;
+    font-size: 40px;
+    display: flex;
+    height:100%;
+    animation: onStart-header .1s linear .1s;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* all sections starts here */
+/* quiz-pick and quiz-blank */
+section {
+    height:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2 {
+    color:white;
+}
+
+/* section#quiz-pick starts here */
+section#quiz-pick {
+    display:flex;
+    flex-direction: column;
+}
+
+section#quiz-pick label {
+    padding:3px;
+    margin:3px;
+    width: 75%;
+    border: 2px solid black;
+    border-radius:100px;
+    display: flex;
+    align-items: center;
+    font-size:25px;
+    background-color: white;
+    cursor:pointer;
+}
+section#quiz-pick img{
+    padding:6px;
+    height:35px;
+    margin:0 6px;
+}
+section#quiz-pick button {
+    font-size: 25px;
+    border-radius: 100px;
+    padding:6px;
+    background-color: green;
+    color:white;
+    margin-left:auto;
+    filter:opacity(0);
+    transition: filter .3s ease-in;
+    cursor: inherit;
+}
+section#quiz-pick label:hover button {
+    filter: opacity(1);
+    transition: filter .15s ease-out;
+}
+
+
+/* start of section#quiz-blank */
+section#quiz-blank {
+    background-color: gray;
+    display: none;
+}
+
+
+/* start of section#quiz-highscore */
+section#quiz-highscore {
+    background-color: gray;
+    display: none;
+}
+input#highscore:checked~section {
+    display:none;
+    background-color: red;
+}
+input#highscore:checked~section#quiz-highscore {
+    display:flex;
+    background-color: red;
+}
+
+
+/* footer starts here */
+footer {
+    height:5%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer label {
+    padding: 6px;
+    color:white;
+    font-size: 17px;
+    cursor:pointer;
+}
+footer label:hover {
+    text-decoration: underline;
+}
+footer label:checked {
+    color:red;
+}
+input#quizzes:checked~footer label[for=quizzes],
+input#highscore:checked~footer label[for=highscore],
+input#about:checked~footer label[for=about],
+input#user:checked~footer label[for=user] {
+    filter: opacity(.5);
+    cursor:default;
+}
+input#quizzes:checked~footer label[for=quizzes]:hover,
+input#highscore:checked~footer label[for=highscore]:hover,
+input#about:checked~footer label[for=about]:hover,
+input#user:checked~footer label[for=user]:hover {
+    text-decoration: none;
+}
+
+/* all keyframes start here */
+@keyframes onStart-header {
+    from {height:100%;font-size: 40px;}
+    to {height: 10%;font-size: 30px}
+}

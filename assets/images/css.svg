@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg4190"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   width="153.87845"
+   height="170.57138"
+   viewBox="0 0 144.26105 159.91066"
+   sodipodi:docname="1529787345.svg"
+   inkscape:export-filename="..\bootcamp\mod-4\assets\images\css.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="972"
+     id="namedview4192"
+     showgrid="true"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="276.1778"
+     inkscape:cy="397.38985"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4190"
+     showguides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <title
+     id="title5454">W3 ORG Technologies and Blazons</title>
+  <metadata
+     id="metadata4196">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>W3 ORG Technologies and Blazons</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:date>2018-06-23 (yyyy-mm-dd)</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>None</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>Victor Westmann</dc:identifier>
+        <dc:relation>Author</dc:relation>
+        <dc:language>English</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Open Technologies</rdf:li>
+            <rdf:li>World Wide Web</rdf:li>
+            <rdf:li>SVG</rdf:li>
+            <rdf:li>ODS</rdf:li>
+            <rdf:li>ODF</rdf:li>
+            <rdf:li>MathML</rdf:li>
+            <rdf:li>HTML</rdf:li>
+            <rdf:li>CSS</rdf:li>
+            <rdf:li>JavaScript</rdf:li>
+            <rdf:li>JS</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4194" />
+  <g
+     transform="matrix(0.39717402,0,0,0.39717402,-203.84725,-245.04057)"
+     id="g9993">
+    <g
+       id="g9989">
+      <path
+         style="fill:#0070bb;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 693.19731,616.96022 v 0.008 l -179.95313,0.375 33.97656,360.87886 146.86719,40.93162 v 0.4277 l 0.76563,-0.2129 0.76562,0.2129 v -0.4277 l 146.86719,-40.93162 33.97656,-360.87886 -179.95117,-0.375 v -0.008 l -1.6582,0.004 z"
+         id="path9983"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#0070bb;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.836808px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 692.50395,647.78443 v 0.006 l -147.91797,0.32032 27.92773,307.43363 120.72266,34.871 v 0.3633 l 0.62891,-0.1816 0.19921,0.057 V 647.78883 h -0.19921 l -1.36133,-0.004 z"
+         id="path9985"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path9987"
+       d="m 694.97465,647.78443 v 342.49215 l 120.24219,-34.7324 27.92773,-307.43357 -147.91601,-0.32032 v -0.006 h -0.25391 z"
+       style="fill:#28aae1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.836808px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+  <g
+     aria-label="3"
+     style="font-style:normal;font-weight:normal;font-size:12.8px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.06667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="text10087"
+     transform="matrix(0.37235053,0,0,0.37235053,-181.41122,-58.061065)">
+    <path
+       d="m 728.67276,359.49887 q 28.33133,7.31737 42.96606,25.51696 14.82235,18.01198 14.82235,45.96806 0,41.65269 -31.8962,63.41716 -31.8962,21.57684 -93.06186,21.57684 -21.57685,0 -43.34131,-3.56487 -21.57685,-3.37724 -42.77844,-10.31936 v -55.72454 q 20.26347,10.13173 40.15169,15.38523 20.07584,5.06586 39.40119,5.06586 28.70658,0 43.90419,-9.94411 15.38522,-9.94411 15.38522,-28.51895 0,-19.13773 -15.76047,-28.89421 -15.57285,-9.94411 -46.15568,-9.94411 H 623.41529 V 342.9879 h 30.3952 q 27.20559,0 40.52694,-8.44312 13.32136,-8.63073 13.32136,-26.07983 0,-16.13573 -12.94611,-24.95409 -12.9461,-8.81836 -36.58682,-8.81836 -17.4491,0 -35.27345,3.94012 -17.82434,3.94012 -35.46107,11.63273 v -52.91017 q 21.38922,-6.00399 42.40319,-9.00599 21.01397,-3.00199 41.27744,-3.00199 54.59879,0 81.61675,18.01197 27.20559,17.82435 27.20559,53.84829 0,24.57884 -12.94611,40.33932 -12.9461,15.57285 -38.27544,21.95209 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:384.255px;line-height:125%;font-family:'Galano Grotesque DEMO';-inkscape-font-specification:'Galano Grotesque DEMO, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:1.06667px"
+       id="path1168"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
