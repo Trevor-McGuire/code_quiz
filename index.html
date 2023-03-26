@@ -2,9 +2,56 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/style.css">
+        <title>Code Quiz</title>
     </head>
     <body>
-        <h1>Code Quiz</h1>
+        <main>
+            <input type="radio" name="quizzes" id="quiz-1">
+            <input type="radio" name="quizzes" id="quiz-2">
+            <input type="radio" name="quizzes" id="quiz-3">
+
+            <input type="radio" name="footer" id="quizzes">
+            <input type="radio" name="footer" id="highscore">
+            <input type="radio" name="footer" id="about">
+            <input type="radio" name="footer" id="user">
+
+            <header>
+                <h1>Code Quiz</h1>
+            </header>
+
+            <section id="quiz-pick">
+                <h2>Available Quizzes</h2>
+                <label for="quiz-1"><img src="./assets/images/html.svg">HTML<button>Start</button></label>
+                <label for="quiz-2"><img src="./assets/images/css.svg">CSS<button>Start</button></label>
+                <label for="quiz-3"><img src="./assets/images/js.svg">JavaScript<button>Start</button></label>
+            </section> 
+
+            <section id="quiz-blank">
+                <time>timer<span>feedback</span></time>
+                <article>
+                    <section>question</section>
+                    <section>answers</section>
+                    <section>feedback</section>
+                </article>
+            </section>
+
+            <section id="quiz-highscore">
+                <time>timer<span>feedback</span></time>
+                <article>
+                    <section>question</section>
+                    <section>answers</section>
+                    <section>feedback</section>
+                </article>
+            </section>
+
+            <footer>
+                <label for="quizzes">📝Quizzes</label>
+                <label for="highscore">💯Highscores</label>
+                <label for="about">🧃About</label>
+                <label for="user">👤User</label>
+            </footer>
+
+        </main>
         <script src="assets/js/script.js"></script>
-    </body>
+        </body>
 </html>
