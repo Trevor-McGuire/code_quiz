@@ -6,42 +6,58 @@
     </head>
     <body>
         <main>
-            <input type="radio" name="quizzes" id="quiz-1">
-            <input type="radio" name="quizzes" id="quiz-2">
-            <input type="radio" name="quizzes" id="quiz-3">
-
-            <input type="radio" name="footer" id="quizzes">
-            <input type="radio" name="footer" id="highscore">
-            <input type="radio" name="footer" id="about">
-            <input type="radio" name="footer" id="user">
+            <input type="radio" name="quiz-selector" data-section="blank-section"id="quizHTML">
+            <input type="radio" name="quiz-selector" data-section="blank-section"id="quizCSS">
+            <input type="radio" name="quiz-selector" data-section="blank-section" id="quizJS">
+            <input type="radio" name="section-selector" data-section="quizzes-section" id="quizzes" checked>
+            <input type="radio" name="section-selector" data-section="highscore-section" id="highscore">
+            <input type="radio" name="section-selector" data-section="about-section" id="about">
+            <input type="radio" name="section-selector" data-section="user-section" id="user">
 
             <header>
                 <h1>Code Quiz</h1>
             </header>
 
-            <section id="quiz-pick">
+            <section id="quizzes-section">
                 <h2>Available Quizzes</h2>
-                <label for="quiz-1"><img src="./assets/images/html.svg">HTML<button>Start</button></label>
-                <label for="quiz-2"><img src="./assets/images/css.svg">CSS<button>Start</button></label>
-                <label for="quiz-3"><img src="./assets/images/js.svg">JavaScript<button>Start</button></label>
+                <label for="quizHTML"><img src="./assets/images/html.svg">HTML<button>Start</button></label>
+                <label for="quizCSS"><img src="./assets/images/css.svg">CSS<button>Start</button></label>
+                <label for="quizJS"><img src="./assets/images/js.svg">JavaScript<button>Start</button></label>
             </section> 
 
-            <section id="quiz-blank">
-                <time>timer<span>feedback</span></time>
-                <article>
-                    <section>question</section>
-                    <section>answers</section>
-                    <section>feedback</section>
-                </article>
+            <section id="blank-section">
+                <time><span>timer</span><span>feedback</span></time>
+                <h3>question</h3>
+                <ul>answers</ul>
+                <h4>feedback</h4>
+                <button>Skip Tutorial</button>
             </section>
 
-            <section id="quiz-highscore">
-                <time>timer<span>feedback</span></time>
-                <article>
-                    <section>question</section>
-                    <section>answers</section>
-                    <section>feedback</section>
-                </article>
+            <section id="highscore-section">
+                <h2>Highscores</h2>
+                <ol>
+                    <li>1000 - Trevor</li>
+                    <li>1000 - Ashley</li>
+                    <li>1000 - Amanda</li>
+                    <li>1000 - Kevin</li>
+                </ol>
+                <button>Reset</button>
+            </section>
+
+            <section id="about-section">
+                <h2>About</h2>
+                <p>This is a template version of a local storage quiz score keeper.</p>
+            </section>
+
+            <section id="user-section">
+                <h2>Users</h2>
+                <ul>
+                    <li>Trevor</li>
+                    <li>Ashley</li>
+                    <li>Amanda</li>
+                    <li>Kevin</li>
+                </ul>
+                <p>This section has been added for future expansion. It currently has no function.</p>
             </section>
 
             <footer>

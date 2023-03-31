@@ -1,9 +1,17 @@
+
+
+/* there are two current radio input groups
+- selecting whick quiz to begin
+- navigating the footer options */
+
 body {
     background-color: black;
     display:flex;
     justify-content: center;
     align-items: center;
     height:100vh;
+    width:100vw;
+    margin:0;
 }
 main {
     background: black url(../images/background.jfif) no-repeat center top;
@@ -27,32 +35,30 @@ header {
     font-size: 40px;
     display: flex;
     height:100%;
-    animation: onStart-header .1s linear .1s;
-    animation-fill-mode: forwards;
+    animation: onStart-header .1s linear .1s forwards;
     justify-content: center;
     align-items: center;
 }
 
 
 /* all sections starts here */
-/* quiz-pick and quiz-blank */
 section {
     height:85%;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-section h2 {
-    color:white;
-}
-
-/* section#quiz-pick starts here */
-section#quiz-pick {
+    overflow:hidden;
     display:flex;
     flex-direction: column;
 }
+section :is(h2,h3,h4,p,li,time,article) {
+    color:white;
+}
+section :is(h2,p,ul,ol) {
+    max-width: 75%;
+}
 
-section#quiz-pick label {
+/* quizzes-section starts here */
+section#quizzes-section label {
     padding:3px;
     margin:3px;
     width: 75%;
@@ -64,12 +70,12 @@ section#quiz-pick label {
     background-color: white;
     cursor:pointer;
 }
-section#quiz-pick img{
+section#quizzes-section img{
     padding:6px;
     height:35px;
     margin:0 6px;
 }
-section#quiz-pick button {
+section#quizzes-section button {
     font-size: 25px;
     border-radius: 100px;
     padding:6px;
@@ -80,32 +86,56 @@ section#quiz-pick button {
     transition: filter .3s ease-in;
     cursor: inherit;
 }
-section#quiz-pick label:hover button {
+section#quizzes-section label:hover button {
     filter: opacity(1);
     transition: filter .15s ease-out;
 }
 
-
-/* start of section#quiz-blank */
-section#quiz-blank {
-    background-color: gray;
-    display: none;
+/* blank-quiz starts here */
+section#blank-section {
+    height:0%;
+    justify-content: center;
+    align-items: center;
+}
+section#blank-section time {
+    font-size: 30px;
+    align-self:flex-end;
+    width:30%;
+}
+section#blank-section ul {
+    width: 75%;
+    padding:0;
+}
+section#blank-section li {
+    padding:10px;
+    list-style-type: none;
+    width:100%;
+    margin:15px;
+    background-color: teal;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:1px solid teal;
+    cursor: pointer;
+}
+section#blank-section li:hover {
+    border:1px solid white;
 }
 
+/* highscore-section starts here */
+section#highscore-section {
+    height:0%;
+}
 
-/* start of section#quiz-highscore */
-section#quiz-highscore {
-    background-color: gray;
-    display: none;
+/* about-section starts here */
+section#about-section {
+    height:0%;
 }
-input#highscore:checked~section {
-    display:none;
-    background-color: red;
+
+/* user-section starts here */
+section#user-section {
+    height:0%;
 }
-input#highscore:checked~section#quiz-highscore {
-    display:flex;
-    background-color: red;
-}
+
 
 
 /* footer starts here */
@@ -143,7 +173,20 @@ input#user:checked~footer label[for=user]:hover {
 }
 
 /* all keyframes start here */
+/* there are three current animation groups
+- the title screen animation (completed)
+- 8 (4shrink/4expand) while navigationg the footer(working)
+- starting/ending a quiz (unstarted) */
 @keyframes onStart-header {
     from {height:100%;font-size: 40px;}
     to {height: 10%;font-size: 30px}
 }
+@keyframes expand-section {
+    from {height:0%;}
+    to {height: 85%;}
+}
+@keyframes shrink-section {
+    from {height:85%;}
+    to {height: 0%;}
+}
+
