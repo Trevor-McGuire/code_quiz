@@ -53,7 +53,6 @@ function startQuizMain() {
         tutorialBtn.remove()
         for (var i = 0; i < tutorialTimeout.length; i++) {
             window.clearTimeout(tutorialTimeout[i])
-            console.log(1)
         }
         clearTimeout(quizStartTimeout)
         quizStart()
@@ -87,11 +86,15 @@ function startQuizMain() {
         },1000) //todo set this back to 1000
     }
     function giveQuestion() {
+        // if (questionsShuffled.length == 1) {
+        //     console.log("end of quiz")
+        //     return;
+        // }
+        console.log(questionsShuffled)
         question.textContent = questionsShuffled[0][0]
         questionsShuffled[0].shift()
         answers.textContent = ""
         for(i=0 ; i<questionsShuffled[0].length ; i++) {
-            console.log(i)
             var li = document.createElement("li")
             li.textContent = questionsShuffled[0][i]
             if (i==0) {
@@ -138,11 +141,11 @@ var quizMaster = {
     ],
     quizHTML: [
         ["HTML Quiz","Welcome to the HTML Quiz. This quiz will test your knowledge of HTML. You will be given 10 seconds per question. This quiz has 15 questions. Every wrong answer will deduct 10 seconds. Your final score is the amount of time remaining once the final question is answered. Good luck!"],
-        ["question","correct answer1","correct answer1","correct answer1",],
-        ["question","correct answer2","correct answer1","correct answer1",],
-        ["question","correct answer3","correct answer1","correct answer1",],
-        ["question","correct answer4","correct answer1","correct answer1",],
-        ["question","correct answer5","correct answer1","correct answer1",],
+        ["question","correct","wrong","wrong","wrong",],
+        ["question","correct","wrong","wrong","wrong",],
+        ["question","correct","wrong","wrong","wrong",],
+        ["question","correct","wrong","wrong","wrong",],
+        ["question","correct","wrong","wrong","wrong",],
     ],
     quizCSS: [
         ["CSS Quiz","Welcome to the CSS Quiz. This quiz will test your knowledge of CSS. You will be given 10 seconds per question. This quiz has 15 questions. Every wrong answer will deduct 10 seconds. Your final score is the amount of time remaining once the final question is answered. Good luck!"],
