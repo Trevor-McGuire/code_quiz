@@ -1,192 +1,53 @@
-
-
-/* there are two current radio input groups
-- selecting whick quiz to begin
-- navigating the footer options */
-
 body {
-    background-color: black;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width:100vw;
-    margin:0;
-}
-main {
-    background: black url(../images/background.jfif) no-repeat center top;
-    height: 100vh;
-    width:100vw;
-    max-height: 840px;
-    max-width:390px;
-    overflow: hidden;
-}
-header,section,footer {
-    background-color: #000000cc;
-}
-input {
-    display:none;
-}
-
-/* header starts here */
-header {
-    margin:0px;
-    color:white;
-    font-size: 40px;
-    display: flex;
-    height:100%;
-    animation: onStart-header .1s linear .1s forwards;
-    justify-content: center;
-    align-items: center;
+  margin:0;
+  padding:0;
+  height:100vh;
+  width:100vw;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-/* all sections starts here */
-section {
-    height:85%;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
-    display:flex;
-    flex-direction: column;
+.main-container {
+  background-color: red;
+  padding:0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 60% 20%;
+  justify-content: center;
+  align-items: center;
 }
-section :is(h2,h3,h4,p,li,time,article) {
-    color:white;
+@media only screen and (max-width: 600px) {
+  .main-container {
+    height:80vh;
+    width:80vw;
+  }
 }
-section :is(h2,p,ul,ol) {
-    max-width: 75%;
-}
-
-/* quizzes-section starts here */
-section#quizzes-section label {
-    padding:3px;
-    margin:3px;
-    width: 75%;
-    border: 2px solid black;
-    border-radius:100px;
-    display: flex;
-    align-items: center;
-    font-size:25px;
-    background-color: white;
-    cursor:pointer;
-}
-section#quizzes-section img{
-    padding:6px;
-    height:35px;
-    margin:0 6px;
-}
-section#quizzes-section button {
-    font-size: 25px;
-    border-radius: 100px;
-    padding:6px;
-    background-color: green;
-    color:white;
-    margin-left:auto;
-    filter:opacity(0);
-    transition: filter .3s ease-in;
-    cursor: inherit;
-}
-section#quizzes-section label:hover button {
-    filter: opacity(1);
-    transition: filter .15s ease-out;
-}
-
-/* blank-quiz starts here */
-section#blank-section {
-    height:0%;
-    justify-content: center;
-    align-items: center;
-}
-section#blank-section time {
-    font-size: 30px;
-    align-self:flex-end;
-    width:30%;
-}
-section#blank-section ul {
-    width: 75%;
-    padding:0;
-}
-section#blank-section li {
-    padding:10px;
-    list-style-type: none;
-    width:100%;
-    margin:15px;
-    background-color: teal;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border:1px solid teal;
-    cursor: pointer;
-}
-section#blank-section li:hover {
-    border:1px solid white;
-}
-
-/* highscore-section starts here */
-section#highscore-section {
-    height:0%;
-}
-
-/* about-section starts here */
-section#about-section {
-    height:0%;
-}
-
-/* user-section starts here */
-section#user-section {
-    height:0%;
+@media only screen and (min-width: 600px) {
+  .main-container {
+    height: 80vh;
+    width:500px;
+  }
 }
 
 
-
-/* footer starts here */
-footer {
-    height:5%;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
+.main-container>* {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:90%;
+  margin: 0 5%;
 }
-footer label {
-    padding: 6px;
-    color:white;
-    font-size: 17px;
-    cursor:pointer;
+.main-title {
+  background-color: green;
+  font-size: 50px;
 }
-footer label:hover {
-    text-decoration: underline;
+.main-quiz-container {
+  background-color: white;
+  height:100%;
 }
-footer label:checked {
-    color:red;
+.main-controls {
+  background-color: maroon;
 }
-input#quizzes:checked~footer label[for=quizzes],
-input#highscore:checked~footer label[for=highscore],
-input#about:checked~footer label[for=about],
-input#user:checked~footer label[for=user] {
-    filter: opacity(.5);
-    cursor:default;
-}
-input#quizzes:checked~footer label[for=quizzes]:hover,
-input#highscore:checked~footer label[for=highscore]:hover,
-input#about:checked~footer label[for=about]:hover,
-input#user:checked~footer label[for=user]:hover {
-    text-decoration: none;
-}
-
-/* all keyframes start here */
-/* there are three current animation groups
-- the title screen animation (completed)
-- 8 (4shrink/4expand) while navigationg the footer(working)
-- starting/ending a quiz (unstarted) */
-@keyframes onStart-header {
-    from {height:100%;font-size: 40px;}
-    to {height: 10%;font-size: 30px}
-}
-@keyframes expand-section {
-    from {height:0%;}
-    to {height: 85%;}
-}
-@keyframes shrink-section {
-    from {height:85%;}
-    to {height: 0%;}
-}
-
