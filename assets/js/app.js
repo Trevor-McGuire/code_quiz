@@ -263,7 +263,8 @@ export var app = {
         // event listener to triggar that a guess was made
         answers.addEventListener("click", function eventHandler() {
           app.quiz.guessMade(qa)
-          this.removeEventListener('click',eventHandler)
+          console.log(event.target.className)
+          if (event.target.className !== "answers") this.removeEventListener('click',eventHandler)
         })
 
         // append the new answer buttons
