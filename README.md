@@ -1,19 +1,48 @@
-# code_quiz
+# Code Quiz
 
-## User Story
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Acceptance Criteria
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+## Table of Contents  
+1. [Description](#description)
+2. [Installing](#installing)
+3. [Executing program](#executing-program)
+4. [Contribution Guidelines](#contribution-guidelines)
+5. [Test Instruction](#test-instruction)
+6. [License](#license)
+7. [Questions](#questions)
+
+## Description
+
+ Code Quiz allows the user to track how quickly they can complete a quiz, how many answers they got right, and how many questions they get wrong. It then displays a scoreboard that ranks previous attempts. Code Quiz is also a template that easily allows users to add/modify questions and answers. It even allows them to add entierly new quizzes.
+
+
+## Installing
+
+ * There is nothing to download expect the indes.js file and all the contents of the asset folder. 
+
+
+## Executing program
+
+ * Open the index.HTML file and begin testing your knowledge
+
+
+## Contribution Guidelines
+
+ Make your own quizzes.
+
+
+## Test Instruction
+
+ * 
+
+
+## License
+
+ MIT License
+
+
+## Questions
+
+ [Trevor-McGuire](https://github.com/Trevor-McGuire/)
+
+ [trevor.mcguire.candidate@gmail.com](mailto:trevor.mcguire.candidate@gmail.com)
