@@ -19,16 +19,15 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  height: 90vh;
 }
 @media only screen and (max-width: 600px) {
   main {
-    height:80vh;
     width:80vw;
   }
 }
 @media only screen and (min-width: 600px) {
   main {
-    height: 80vh;
     width:500px;
   }
 }
@@ -271,26 +270,24 @@ table * {
   flex-shrink: 0;
   font-family: Eina01,sans-serif;
   font-size: 14px;
-  font-weight: 800;
-  
+  font-weight: 100;
   line-height: 20px;
   margin: 0;
-  min-height: 40px;
+  min-height: 30px;
   outline: none;
   overflow: visible;
   padding: 9px 16px;
   pointer-events: auto;
   position: relative;
-  
   text-decoration: none;
   text-transform: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  
   width: auto;
   word-break: keep-all;
   z-index: 0;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -301,7 +298,7 @@ table * {
 
 .button-78:before,
 .button-78:after {
-  border-radius: 80px;
+  border-radius: 10px;
 }
 
 .button-78:before {

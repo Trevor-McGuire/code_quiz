@@ -3,31 +3,114 @@ import { app } from "../app.js"
 export var html = { // todo
   title: "HTML", // todo
   qa: function() {
-    return [ // todo vvvv
+    return [
       {
         question:
-          "What does HTML stand for?",
+          "What is the correct HTML for creating a hyperlink?",
         correct: [
-          "Hyper Text Markup Language",
+          '<a href="example.com">example.com</a>',
         ],
         wrong: [
-          "Home Tool Markup Language",
-          "Hyperlinks and Text Markup Language",
+          '<a>example.com</a>',
+          '<a name="example.com">example.com</a>',
+          '<a url="example.com">example.com</a>',
         ],
       },
       {
         question:
-          "Who is making the Web standards?",
+          "What is the HTML tag for inserting a line break?",
         correct: [
-          "The World Wide Web Consortium",
+          "<br>",
         ],
         wrong: [
-          "Microsoft",
-          "Mozilla",
-          "Google",
+          "<break>",
+          "<lb>",
+          "<nl>",
         ],
-      }, // todo ^^^^
-    ]
+      },
+      {
+        question:
+          "What is the HTML tag for making text bold?",
+        correct: [
+          "<strong>",
+        ],
+        wrong: [
+          "<bold>",
+          "<b>",
+          "<important>",
+        ],
+      },
+      {
+        question:
+          "What is the HTML tag for creating an unordered list?",
+        correct: [
+          "<ul>",
+        ],
+        wrong: [
+          "<ol>",
+          "<li>",
+          "<list>",
+        ],
+      },
+      {
+        question:
+          "What is the HTML tag for creating a table?",
+        correct: [
+          "<table>",
+        ],
+        wrong: [
+          "<t>",
+          "<tab>",
+          "<tbl>",
+        ],
+      },
+      {
+        question:
+          "What is the HTML tag for creating a form?",
+        correct: [
+          "<form>",
+        ],
+        wrong: [
+          "<input>",
+          "<button>",
+          "<submit>",
+        ],
+      },
+      {
+        question:
+          "What is the HTML tag for creating a text input field?",
+        correct: [
+          '<input type="text">',
+        ],
+        wrong: [
+          '<text>',
+          '<input type="input">',
+          '<input type="textbox">',
+        ],
+      },
+       {
+         question:
+           "What is the HTML tag for creating a drop-down list?",
+         correct: [
+             "<select></select>"
+         ],
+         wrong: [
+             "<dropdown></dropdown>",
+             "<list></list>"
+         ]
+       },
+       {
+         question:
+           "Which of these tags are all <table> tags?",
+         correct: [
+             "<table><tr><td></td></tr></table>"
+         ],
+         wrong: [
+             "<table><head><tfoot></tfoot></head><body><tr><td></td></tr></body></table>",
+             "<thead><body><tr><td></td></tr></body></thead>"
+         ]
+       }
+    ];
   },
   init: function() {
     var btn = document.createElement("button")
